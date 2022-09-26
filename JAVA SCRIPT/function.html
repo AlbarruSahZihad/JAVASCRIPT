@@ -1,0 +1,54 @@
+<html>
+
+<head>
+    <title>Blajar Function - JavaScript</title>
+</head>
+
+<body>
+    <script>
+        function luaspp() {
+            var p = document.getElementById("nilai_p");
+            var l = document.getElementById("nilai_l");
+            var hasil = document.getElementById("hasil");
+            var rumus = p.value * l.value;
+            document.getElementById("hasil2").innerHTML = rumus;
+
+            var jawab = p.value * l.value;
+            hasil.value = jawab;
+
+        }
+    </script>
+    <h1 style="color:red;">PROGRAM SEDERHANA</h1>
+    <h4 style="color:blue;">MENGHITUNG LUAS PERSGI PANJANG</h4>
+    <hr>
+    <!-- <table>
+        <tr>
+            <td>Nilai p</td>
+            <td>:</td>
+            <td><input type="text" id="nilai_p"></td>
+
+        </tr>
+        <tr>
+            <td>Nilai L</td>
+            <td>:</td>
+            <td><input type="text" id="nilai_L"></td>
+        </tr>
+        <tr>
+            <td>luas</td>
+            <td>:</td>
+            <td><input type="text" id="hasil"></td>
+        </tr>
+    </table> -->
+
+    nilai P <input type="text" id="nilai_p">
+    <br><br>
+    nilai L <input type="text" id="nilai_l">
+    <br><br>
+    HASIl <input type="text" id="hasil">
+    <br><br>
+    <div id="hasil2"></div>
+    <br><br>
+    <button onclick="luaspp()">HASIl</button>
+</body>
+
+</html>

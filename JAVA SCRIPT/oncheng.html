@@ -1,0 +1,39 @@
+<html>
+
+<head>
+    <title>Belajar Event Oncheng - JavaScript</title>
+</head>
+
+<body>
+    <h1>PROGRAM TARIF BUS</h1>
+    Tujuan
+    <br>
+    <select name="tujuan" id="tujuan" style="background-color: rgb(189, 189, 189);">
+        <option value="">- Silahkan Pilih Tujuan Anda -</option>
+        <option value=" pekanbaru">Pekanbaru</option>
+        <option value="padang">Padang</option>
+        <option value="medan">Medan</option>
+    </select>
+
+    <br><br>
+    Harga Tiket
+    <br>
+    <input type="text" name="harga" id="harga" readonly
+        style="background-color: rgb(189, 189, 189); border:1px solid #2d2d2d;padding: 5px; ">
+
+    <script>
+        var tj = document.getElementById('tujuan');
+        var hg = document.getElementById('harga');
+
+        tj.addEventListener('change', function () {
+            if (tj.value == 'pekanbaru') {
+                hg.value = '70.000';
+            }
+            else if (tj.value == 'medan') {
+                hg.value = '200.000';
+            } else {
+                hg.value = '150.000';
+            }
+        })
+    </script>
+</body>

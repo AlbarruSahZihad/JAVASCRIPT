@@ -1,0 +1,62 @@
+<html>
+
+<head>
+    <title>belajar if else</title>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <h1><b>Program Mencari Grade Nilai</b></h1>
+            </div>
+            <br><br>
+            <label class="form-label p-2"><b>
+                    <h5>INPUT NILAI</h5>
+                </b>
+                <input class="form-control" type="text" id="nilai">
+                <br>
+                <!-- <a class="btn btn-primary text-body" href="#" role="button">CEK</a>    -->
+                <button onclick="Grade()" class="btn btn-primary text-body">CEK</button>
+                <br><br>
+                <div class="hasil" id="hasil"></div>
+            </label>
+
+        </div>
+    </div>
+
+    <script>
+        function Grade() {
+            var nilai = document.getElementById("nilai").value;
+            var hasil = document.getElementById("hasil");
+            console.log(nilai);
+            // var nilai = D;
+
+
+            if (nilai >= 101) {
+                hasil.innerHTML = "Mana ada nilai seperti itu,dek dek!"
+            } else if (nilai >= 90 && nilai <= 100) {
+                hasil.innerHTML = "Gread niai Anda A";
+            } else if (nilai >= 80 && nilai <= 89) {
+                hasil.innerHTML = "Gread nilai Anda B";
+            } else if (nilai >= 75 && nilai <= 79) {
+                hasil.innerHTML = "Gread nilai Anda C";
+            }
+            else if (nilai >= 65 && nilai <= 69) {
+                hasil.innerHTML = "Gread nilai Anda D";
+            } else if (nilai >= 1 && nilai <= 65) {
+                hasil.innerHTML = "Nilai mu rendah seklai,belajar lagi yah kids,Mama mu pasti marah"
+            }
+
+        }
+    </script>
+</body>
+<!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+    crossorigin="anonymous"></script>
+
+</html>

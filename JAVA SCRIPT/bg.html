@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+
+    <style>
+        #rgb {
+            width: 400px;
+            height: 200px;
+            border: 1px solid black;
+            margin: auto;
+            border-radius: 5px;
+        }
+
+        .box {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container p-5">
+        <div class="row">
+            <div class="col-md-6 offset-md-3 text-center">
+                <div id="rgb"></div>
+                <div class="box mt-5">
+                    <button class="btn" id="red" onclick="red()">Red</button>
+                    <button class="btn" id="blue" onclick="blue()">Blue</button>
+                    <button class="btn" id="green" onclick="green()">Green</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--JAVA SCRIPT -->
+    <script>
+        function red() {
+            var rgb = document.getElementById("rgb");
+            rgb.style.backgroundColor = "red";
+        }
+
+        function blue() {
+            var rgb = document.getElementById("rgb");
+            rgb.style.backgroundColor = "blue";
+        }
+
+        function green() {
+            var rgb = document.getElementById("rgb");
+            rgb.style.backgroundColor = "green";
+        }
+    </script>
+</body>
+<!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+    crossorigin="anonymous"></script>
+
+</html>

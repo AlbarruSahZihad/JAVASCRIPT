@@ -1,0 +1,37 @@
+<html>
+
+<head>
+    <title>Belajar event-javascript</title>
+</head>
+
+<body>
+    <button onclick="hello()">Hello</button>
+    <button onclick="hayolo()">Cuy</button>
+    <button id="w">World!</button>
+    <button id="c">DVD!</button>
+
+
+    <script>
+        // tombol 1
+        function hello() {
+            alert("Hello World!");
+        }
+
+        // tombol 2
+        var tombolw = document.getElementById('w');
+        tombolw.addEventListener('dblclick', function () {
+            alert("hello cuy !")
+        });
+
+        // tombol 3
+        function hayolo() {
+            alert("welcome guys");
+        }
+
+        var tombolc = document.getElementById('c').addEventListener('click', function () {
+            alert("david sang penjoki")
+        });
+    </script>
+</body>
+
+</html>

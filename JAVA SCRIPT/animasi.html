@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>animasi warna</title>
+</head>
+
+<body>
+    <p class="paragraf">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Error neque quo dolores. Placeat dolorem ratione illum,
+        nulla reprehenderit minus cupiditate minima hic iste tempore et doloremque, sapiente fugit, beatae ut.
+    </p>
+    <p class="paragraf">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Natus odio porro, at sit corporis, et eligendi
+        exercitationem recusandae aspernatur, veritatis culpa voluptatum! Temporibus aut dignissimos porro aliquid illum
+        consequuntur ea?
+    </p>
+
+    <p class="paragraf">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Natus odio porro, at sit corporis, et eligendi
+        exercitationem recusandae aspernatur, veritatis culpa voluptatum! Temporibus aut dignissimos porro aliquid illum
+        consequuntur ea?
+    </p>
+    <script>
+        var pg = document.getElementsByClassName("paragraf");
+        pg.inner
+        setInterval(function () {
+            pg[0].style.color = "red";
+            pg[1].style.color = "green";
+            pg[2].style.color = "blue";
+
+            setTimeout(function () {
+                pg[0].style.color = "black";
+                pg[1].style.color = "black";
+                pg[2].style.color = "black";
+            }, 500);
+        }, 1000);
+
+
+    </script>
+</body>
+
+</html>
